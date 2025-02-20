@@ -50,6 +50,7 @@ const closeMenu = () => {
   background: #222;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   position: relative;
+  z-index: 1000;
 }
 
 /* Portfolio Title (Left Side) */
@@ -58,8 +59,8 @@ const closeMenu = () => {
   font-weight: bold;
   color: #ffb84d;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;
+  cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -91,14 +92,14 @@ const closeMenu = () => {
 
 /* Hover Effect */
 .nav-button:hover {
-  background: #ffb84d; /* Light Orange */
+  background: #ffb84d;
   color: #222;
   transform: translateY(-3px);
 }
 
 /* Active Link */
 .router-link-active {
-  background: #ff9900; /* Orange */
+  background: #ff9900;
   color: #fff;
 }
 
@@ -125,11 +126,12 @@ const closeMenu = () => {
     flex-direction: column;
     background: #222;
     position: absolute;
-    top: 100%;
+    top: 60px;
     right: 0;
     left: 0;
-    padding: 15px 0;
+    padding: 15px 28px;
     text-align: center;
+    transition: max-height 0.3s ease-in-out;
   }
 
   /* Show Menu when Open */
