@@ -22,7 +22,7 @@
   height: 100vh;
   text-align: center;
   color: white;
-  background: url('public/assets/coding-bg.webp') no-repeat center center/cover;
+  background: url('/assets/coding-bg.webp') no-repeat center center/cover;
   overflow: hidden;
 }
 
