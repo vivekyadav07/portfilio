@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="navbar">
       <!-- Portfolio Title (Left Side) -->
-      <div class="portfolio-title" @click="$router.push('/')">Portfolio</div>
+      <div class="portfolio-title" @click="$router.push('/practice')">Portfolio</div>
 
       <!-- Hamburger Button (Mobile) -->
       <button class="hamburger" @click="toggleMenu">☰</button>
@@ -13,6 +13,8 @@
         <router-link to="/about" class="nav-button" @click="closeMenu">About</router-link>
         <router-link to="/projects" class="nav-button" @click="closeMenu">Projects</router-link>
         <router-link to="/contact" class="nav-button" @click="closeMenu">Contact</router-link>
+        <!-- <router-link to="/practice" class="nav-button" @click="closeMenu">Practice</router-link> -->
+        <router-link to="/ask-ai" class="nav-button" @click="closeMenu">Ask My AI</router-link>
       </div>
     </nav>
 
