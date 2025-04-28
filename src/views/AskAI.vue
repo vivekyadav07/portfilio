@@ -49,7 +49,7 @@ export default {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
-              Authorization: `Bearer ${process.env.VUE_APP_HUGGINGFACE_API_KEY}`,
+              Authorization: `Bearer ${import.meta.env.VITE_HUGGINGFACE_API_KEY}`,
             },
             body: JSON.stringify({
               inputs: this.userInput,
